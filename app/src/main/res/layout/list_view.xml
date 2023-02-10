@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#776A6A"
+        android:text="Wish list"
+        android:textAlignment="center"
+        android:textSize="70px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        class="android.widget.ScrollView"
+        android:layout_width="380dp"
+        android:layout_height="650dp"
+        android:background="#776A6A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbHeader"
+        app:layout_constraintVertical_bias="0.609"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItems"
+        android:layout_width="349dp"
+        android:layout_height="626dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.541"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnGoForm"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        app:icon="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="@+id/rvItems"
+        app:layout_constraintEnd_toEndOf="@+id/rvItems"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="@+id/rvItems"
+        app:layout_constraintTop_toTopOf="@+id/rvItems"
+        app:layout_constraintVertical_bias="0.987"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

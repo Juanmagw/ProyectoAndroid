@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="goMain"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconSize="70px"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconSize="70px"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <view
+        android:id="@+id/view"
+        class="android.widget.ScrollView"
+        android:layout_width="380dp"
+        android:layout_height="650dp"
+        android:background="#776A6A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802"
+        tools:ignore="MissingConstraints" />
+
+    <DatePicker
+        android:id="@+id/dtDate"
+        android:layout_width="347dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="15dp"
+        android:calendarViewShown="false"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.974"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="84dp"
+        android:layout_height="19dp"
+        android:background="#776A6A"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="101dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="113dp"
+        android:background="#776A6A"
+        android:text="Description"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="314dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:hint="Description"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/tvAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="64dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="192dp"
+        android:background="#776A6A"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/sAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="288dp"
+        android:background="#776A6A"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/dtDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/sAge"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="149dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvDate"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="314dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/white"
+        android:hint="Name"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/tvDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
